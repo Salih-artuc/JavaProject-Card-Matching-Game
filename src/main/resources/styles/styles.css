@@ -1,0 +1,269 @@
+.login-background {
+    -fx-background-color: linear-gradient(to bottom right, #2c3e50, #34495e);
+}
+
+.title-text {
+    -fx-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.text-field, .password-field {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.7);
+    -fx-padding: 10 20;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.3), 10, 0, 0, 0);
+}
+
+.button {
+    -fx-background-color: #3498db;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10 45;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #2980b9;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
+}
+
+.message-label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+/* Ana Menü Stilleri */
+.menu-background {
+    -fx-background-color: linear-gradient(to bottom right, #2c3e50, #34495e);
+}
+
+.menu-title {
+    -fx-fill: white;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+.menu-button {
+    -fx-background-color: #3498db;
+    -fx-background-radius: 25;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-padding: 15 40;
+    -fx-cursor: hand;
+    -fx-min-width: 200;
+}
+
+.menu-button:hover {
+    -fx-background-color: #2980b9;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 15, 0, 0, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-transition: all 0.3s ease;
+}
+
+/* Grid Seçimi ve Oyuncu Nick Stilleri */
+.grid-option {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 15;
+    -fx-padding: 20;
+    -fx-cursor: hand;
+    -fx-min-width: 150;
+    -fx-min-height: 150;
+    -fx-alignment: center;
+}
+
+.grid-option:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.3), 10, 0, 0, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-transition: all 0.3s ease;
+}
+
+.grid-option.selected {
+    -fx-background-color: #3498db;
+    -fx-effect: dropshadow(gaussian, rgba(52, 152, 219, 0.5), 15, 0, 0, 0);
+}
+
+.grid-text {
+    -fx-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.nickname-field {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.7);
+    -fx-padding: 15 25;
+    -fx-font-size: 16px;
+    -fx-min-width: 300;
+}
+
+.nickname-field:focused {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.3), 10, 0, 0, 0);
+}
+
+.start-button {
+    -fx-background-color: #2ecc71;
+    -fx-background-radius: 25;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-padding: 15 45;
+    -fx-cursor: hand;
+    -fx-min-width: 200;
+}
+
+.start-button:hover {
+    -fx-background-color: #27ae60;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 15, 0, 0, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-transition: all 0.3s ease;
+}
+
+.pill-box {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 20;
+    -fx-padding: 30;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
+}
+
+.winner-text {
+    -fx-fill: #2ecc71;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.score-text {
+    -fx-fill: white;
+    -fx-font-size: 18px;
+}
+
+.game-background {
+    -fx-background-color: #2c3e50;
+}
+
+.game-background.player1-turn {
+    -fx-background-color: linear-gradient(to bottom right, #e74c3c, #c0392b);
+}
+
+.game-background.player2-turn {
+    -fx-background-color: linear-gradient(to bottom right, #3498db, #2980b9);
+}
+
+.score-box {
+    -fx-background-color: rgba(44, 62, 80, 0.8);
+    -fx-background-radius: 15;
+    -fx-padding: 20 30;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
+}
+
+.player-box {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 10;
+    -fx-padding: 15 25;
+    -fx-min-width: 150;
+    -fx-alignment: center;
+}
+
+.player-box:first-child {
+    -fx-background-color: rgba(231, 76, 60, 0.8);
+}
+
+.player-box:last-child {
+    -fx-background-color: rgba(52, 152, 219, 0.8);
+}
+
+.player-name {
+    -fx-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.player-score {
+    -fx-fill: white;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.vs-text {
+    -fx-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.game-grid {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-background-radius: 20;
+    -fx-padding: 20;
+}
+
+.control-box {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-padding: 15;
+    -fx-background-radius: 20;
+}
+
+.pill-button {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10 30;
+    -fx-cursor: hand;
+}
+
+.pill-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
+}
+
+.control-button {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+}
+
+.control-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
+}
+
+/* Oyun kartları için özel stil */
+.card-button {
+    -fx-background-color: #34495e;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 15 5;
+    -fx-cursor: hand;
+    -fx-min-width: 100;
+    -fx-min-height: 100;
+}
+
+.card-button:hover {
+    -fx-background-color: #2c3e50;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
+} 
+
+#scoresTable {
+    -fx-background-color: black;
+}
+
+

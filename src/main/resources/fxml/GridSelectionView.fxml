@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="30.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.cardmatching.controller.GridSelectionController"
+      styleClass="menu-background"
+      stylesheets="@../styles/styles.css">
+    
+    <padding>
+        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0"/>
+    </padding>
+
+    <Text styleClass="menu-title" text="Grid Boyutunu Seçin"/>
+    
+    <HBox spacing="20" alignment="CENTER">
+        <VBox fx:id="grid3x4" styleClass="grid-option" onMouseClicked="#handleGridSelection">
+            <Text styleClass="grid-text" text="3x4"/>
+        </VBox>
+        
+        <VBox fx:id="grid4x4" styleClass="grid-option" onMouseClicked="#handleGridSelection">
+            <Text styleClass="grid-text" text="4x4"/>
+        </VBox>
+        
+        <VBox fx:id="grid5x4" styleClass="grid-option" onMouseClicked="#handleGridSelection">
+            <Text styleClass="grid-text" text="5x4"/>
+    	</VBox>
+    </HBox>
+    
+    <HBox spacing="50" alignment="CENTER">
+    	<Button fx:id="startButton" text=" Başla " onAction="#handleStart" styleClass="start-button" disable="true"/>
+    	<Button fx:id="goBackButton" text="Geri Dön" onAction="#handleBack" styleClass="start-button"/>
+    </HBox>
+    
+</VBox> 

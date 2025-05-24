@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.cardmatching.controller.ScoresController"
+      styleClass="menu-background"
+      stylesheets="@../styles/styles.css">
+    
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Text styleClass="menu-title" text="Skor Tablosu"/>
+    
+    <TableView fx:id="scoresTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="player1Column" text="1. Oyuncu"/>
+            <TableColumn fx:id="score1Column" text="1. Oyuncu Skoru"/>
+            <TableColumn fx:id="player2Column" text="2. Oyuncu"/>
+            <TableColumn fx:id="score2Column" text="2. Oyuncu Skoru"/>
+            <TableColumn fx:id="timeColumn" text="Oyun Süresi"/>
+        </columns>
+    </TableView>
+    
+    <Button fx:id="menuButton" text="Geri Dön" onAction="#handleBack" styleClass="menu-button"/>
+</VBox> 

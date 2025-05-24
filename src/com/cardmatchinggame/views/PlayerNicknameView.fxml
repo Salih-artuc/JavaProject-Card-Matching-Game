@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="30.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.cardmatchinggame.controllers.PlayerNicknameController"
+      styleClass="menu-background"
+      stylesheets="@../styles/styles.css">
+    
+    <padding>
+        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0"/>
+    </padding>
+
+    <Text styleClass="menu-title" text="Oyuncu İsimlerini Girin"/>
+    
+    <VBox spacing="20" alignment="CENTER" maxWidth="400">
+        <TextField fx:id="player1Field" promptText="1. Oyuncu Adı (3-10 karakter)" styleClass="nickname-field"/>
+        <TextField fx:id="player2Field" promptText="2. Oyuncu Adı (3-10 karakter)" styleClass="nickname-field"/>
+        <HBox spacing="20" alignment="CENTER">
+        	<Button fx:id="startButton" text="Oyuna Başla" onAction="#handleStart" styleClass="start-button" disable="true"/>
+        	<Button fx:id="goBackButton" text="Geri Dön" onAction="#handleBack" styleClass="start-button"/>
+        </HBox>
+    </VBox>
+    
+    <Label fx:id="messageLabel" styleClass="message-label"/>
+</VBox> 

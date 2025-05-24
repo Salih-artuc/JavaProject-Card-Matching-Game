@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="30.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.cardmatching.controller.GameOverController"
+      styleClass="menu-background"
+      stylesheets="@../styles/styles.css">
+    
+    <padding>
+        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0"/>
+    </padding>
+
+    <Text styleClass="menu-title" text="Oyun Bitti!"/>
+    
+    <VBox styleClass="pill-box" spacing="20" alignment="CENTER" maxWidth="400">
+        <Text fx:id="winnerText" styleClass="winner-text"/>
+        <Text fx:id="scoreText" styleClass="score-text"/>
+        
+        <VBox spacing="15" alignment="CENTER" maxWidth="300">
+            <Button fx:id="menuButton" text="Ana Menü" onAction="#handleMenu" styleClass="menu-button"/>
+            <Button fx:id="scoresButton" text="Skorlar" onAction="#handleScores" styleClass="menu-button"/>
+        </VBox>
+    </VBox>
+</VBox> 
